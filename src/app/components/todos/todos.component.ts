@@ -22,11 +22,20 @@ export class TodosComponent implements OnInit {
         content: 'Done Todo',
         completed: true,
       },
+      {
+        content: 'Ending event to see how deleteEntry() works',
+        completed: true,
+      },
     ];
   }
 
   toggleDone(id: number) {
     if (!this.todos[id]) return;
     this.todos[id].completed = !this.todos[id].completed;
+  }
+
+  deleteEntry(id: number) {
+    if (!this.todos[id]) return;
+    this.todos = this.todos.filter((elem: Todo, index: number) => id !== index);
   }
 }
