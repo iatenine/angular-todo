@@ -4,14 +4,10 @@
         <input type="text" name="inputNewItem" class="todo-input" [(ngModel)]="inputNewItem"
             placeholder={{placeholder}}>
         <input type="submit" class="btn btn-primary" (click)="addTodo()" value={{addItemButtonLabel}}>
-        <div class="input-group-text">
-            <label class="label" for="completed">Completed</label>
-            <input class="checkbox" type="checkbox" id="completed" value={{preCompleted}}>
-        </div>
     </form>
 
     <!-- Display preview of new item -->
-    <div *ngIf="inputNewItem" class="todo {{(preCompleted==true ? 'strikethrough' : '')}}">
+    <div *ngIf="inputNewItem" class="todo">
         New Item: {{inputNewItem}}
     </div>
 
