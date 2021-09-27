@@ -6,6 +6,11 @@
         <input type="submit" class="btn btn-primary" (click)="addTodo()" value={{addItemButtonLabel}}>
     </form>
 
+    <!-- Display preview of new item -->
+    <div *ngIf="inputNewItem" class="itemPreview">
+        New Item: {{inputNewItem}}
+    </div>
+
     <!-- Display current list -->
     <div *ngFor="let item of todos; let i = index;" class="todo {{(item.completed ? 'finished' : '')}}">
         <div class="index">{{i + 1}}</div>
