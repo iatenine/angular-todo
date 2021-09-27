@@ -2,7 +2,7 @@
     <!-- Add new item -->
     <form class="input-group">
         <input type="text" name="inputNewItem" class="todo-input" [(ngModel)]="inputNewItem">
-        <input type="button" class="btn btn-primary" value={{addItemButtonLabel}}>
+        <input type="button" class="btn btn-primary" (click)="addTodo()" value={{addItemButtonLabel}}>
     </form>
 
     <!-- Display current list -->

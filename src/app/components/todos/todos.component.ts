@@ -30,6 +30,16 @@ export class TodosComponent implements OnInit {
     ];
   }
 
+  addTodo() {
+    if (!this.inputNewItem) return;
+    this.todos.push({
+      content: this.inputNewItem,
+      completed: false,
+    });
+
+    this.inputNewItem = '';
+  }
+
   toggleDone(id: number) {
     if (!this.todos[id]) return;
     this.todos[id].completed = !this.todos[id].completed;
