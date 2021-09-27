@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Todo List';
+  title: string = 'Todo List';
+  result: string = 'default';
+
+  handleButton() {
+    console.log('hello');
+  }
 }
