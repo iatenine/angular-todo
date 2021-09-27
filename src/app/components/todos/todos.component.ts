@@ -24,4 +24,9 @@ export class TodosComponent implements OnInit {
       },
     ];
   }
+
+  toggleDone(id: number) {
+    if (!this.todos[id]) return;
+    this.todos[id].completed = !this.todos[id].completed;
+  }
 }

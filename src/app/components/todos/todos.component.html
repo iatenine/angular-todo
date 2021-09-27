@@ -2,7 +2,7 @@
     {{title}}
     <div *ngFor="let item of todos; let i = index;" class="todo {{(item.completed ? 'finished' : '')}}">
         <div class="index">{{i + 1}}</div>
-        <div class="content">{{item.content}}</div>
+        <div class="content" (click)="toggleDone(i)">{{item.content}}</div>
         <button class="delete">Remove</button>
     </div>
 </div>
