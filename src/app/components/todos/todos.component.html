@@ -1,7 +1,8 @@
 <div class="todos">
     <!-- Add new item -->
     <form class="input-group">
-        <input type="text" name="inputNewItem" class="todo-input" [(ngModel)]="inputNewItem">
+        <input type="text" name="inputNewItem" class="todo-input" [(ngModel)]="inputNewItem"
+            placeholder={{placeholder}}>
         <input type="button" class="btn btn-primary" (click)="addTodo()" value={{addItemButtonLabel}}>
     </form>
 

@@ -8,8 +8,9 @@ import { Todo } from '../../models/Todo';
 })
 export class TodosComponent implements OnInit {
   todos: Array<Todo> = [];
-  inputNewItem: string = 'Hello, there!!';
-  addItemButtonLabel: string = 'Add Item';
+  inputNewItem: string = '';
+  addItemButtonLabel: string = 'Add new item';
+  placeholder: string = 'Add new item';
 
   constructor() {}
 
