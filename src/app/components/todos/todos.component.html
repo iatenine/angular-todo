@@ -1,8 +1,15 @@
 <div class="todos">
-    {{title}}
+    <!-- Add new item -->
+    <form class="input-group">
+        <input type="text" name="inputNewItem" class="todo-input" [(ngModel)]="inputNewItem">
+        <input type="button" class="btn btn-primary" value={{addItemButtonLabel}}>
+    </form>
+
+    <!-- Display current list -->
     <div *ngFor="let item of todos; let i = index;" class="todo {{(item.completed ? 'finished' : '')}}">
         <div class="index">{{i + 1}}</div>
         <div class="content" (click)="toggleDone(i)">{{item.content}}</div>
-        <button class="delete" (click)="deleteEntry(i)">Remove</button>
+        <button class="delete btn btn-danger" (click)="deleteEntry(i)">Remove</button>
     </div>
+    <!-- <span>{{inputNewItem}}</span> -->
 </div>
