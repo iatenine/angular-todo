@@ -2,14 +2,23 @@
   text-decoration: line-through;
 }
 
-.content {
+.content,
+.delete {
   cursor: pointer;
 }
 
 .todo {
-  width: 100vw;
+  display: flex;
+  padding: 0.1rem;
 }
 
-.todo > * {
-  display: inline;
+.index,
+.content {
+  flex-grow: 1;
+}
+
+.delete {
+  border-radius: 9999px;
+  width: 20vw;
+  flex-grow: 0;
 }
