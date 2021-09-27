@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ObservablesComponent } from './observables.component';
+import { VisibilityComponent } from './visibility.component';
 
-describe('ObservablesComponent', () => {
-  let component: ObservablesComponent;
-  let fixture: ComponentFixture<ObservablesComponent>;
+describe('VisibilityComponent', () => {
+  let component: VisibilityComponent;
+  let fixture: ComponentFixture<VisibilityComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ObservablesComponent ]
+      declarations: [ VisibilityComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ObservablesComponent);
+    fixture = TestBed.createComponent(VisibilityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,19 @@
+<div class="consistent">
+    Consistently visible to demonstrate DOM differences
+</div>
+
+<div class="{{(hide ? 'hidden' : '')}}" (click)="toggleHide()">
+    Click to set visibility: hidden
+</div>
+
+<div class="{{(none ? 'none' : '')}}" (click)="toggleNone()">
+    Click to set display: none
+</div>
+
+<div *ngIf="ifValue" class="if" (click)="toggleIf()">
+    Click to set *ngIf to false
+</div>
+
+<div class="consistent">
+    Consistently visible to demonstrate DOM differences
+</div>

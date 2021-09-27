@@ -11,6 +11,7 @@ export class TodosComponent implements OnInit {
   inputNewItem: string = '';
   addItemButtonLabel: string = 'Add new item';
   placeholder: string = 'Add new item';
+  preCompleted: boolean = true;
 
   constructor() {}
 

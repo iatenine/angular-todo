@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
-import { ObservablesComponent } from './components/observables/observables.component';
+import { VisibilityComponent } from './components/visibility/visibility.component';
 
 @NgModule({
-  declarations: [AppComponent, TodosComponent, ObservablesComponent],
+  declarations: [AppComponent, TodosComponent, VisibilityComponent],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
