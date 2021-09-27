@@ -2,6 +2,14 @@
   text-decoration: line-through;
 }
 
-.content{
-    cursor: pointer;
+.content {
+  cursor: pointer;
+}
+
+.todo {
+  width: 100vw;
+}
+
+.todo > * {
+  display: inline;
 }
