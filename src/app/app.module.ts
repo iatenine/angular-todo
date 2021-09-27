@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
+import { ObservablesComponent } from './components/observables/observables.component';
 
 @NgModule({
-  declarations: [AppComponent, TodosComponent],
-  imports: [BrowserModule, FormsModule],
+  declarations: [AppComponent, TodosComponent, ObservablesComponent],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
