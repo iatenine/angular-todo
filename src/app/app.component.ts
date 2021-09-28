@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'Todo List';
-  result: string = 'default';
+  result: string = '';
 
   handleButton() {
-    console.log('hello');
+    this.result = (<HTMLButtonElement>event?.currentTarget).dataset.val || '';
   }
 }
